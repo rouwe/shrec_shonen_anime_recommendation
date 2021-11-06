@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Demon Slayer | Shrec</title>
+        <link rel="icon" href="images/logo/shrec_tab_logo.png">
+        <link rel="stylesheet" href="css/main_style.css">
+        <link rel="stylesheet" href="css/recommendations.css">
+    </head>
+    <body>
+        <header>
+            <div id="top_logo_container">
+                <img id="top_logo" src="images/logo/SHREC.png" alt="Shrec Logo">
+            </div>
+            <nav id="top_nav_container">  
+                <div id="burger" onclick="open_vertical_nav()">
+                    <span id="open_bread1" class="bread"></span>
+                    <span id="open_bread2" class="bread"></span>
+                    <span id="open_bread3" class="bread"></span>
+                </div>
+                <div id="mobile_nav_container">
+                    <div id="mobile_close_nav" onclick="close_vertical_nav()">
+                        <span id="close_bread1" class="close_bread"></span>
+                        <span id="close_bread2" class="close_bread"></span>
+                    </div>
+                    <ul id="mobile_nav">
+                        <li class="active"><a class="active_link" href="index.html">Home</a></li>
+                        <li class="inactive"><a href="#recommendations_container">Browse</a></li>
+                        <li class="inactive"><a href="#overview_container">About</a></li>
+                    </ul>
+                </div>
+                <div id="desktop_nav_container">    
+                    <ul id="desktop_nav">
+                        <li><a class="active_link" href="index.html">Home</a></li>
+                        <li><a class="desktop_inactive" href="#recommendations_container">Browse</a></li>
+                        <li><a class="desktop_inactive" href="#overview_container">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Main -->
+        <main id="container">
+            <h1>Demon Slayer</h1>
+            <div>
+                <section id="anime_overview">
+                    <h2>Overview</h2>
+                    <div>
+                        <p id="anime_story">Tanjiro Kamado is a kind-hearted and intelligent boy who lives with his family in the mountains. He became his family's breadwinner after his father's death, making trips to the nearby village to sell charcoal. Everything changed when he came home one day to discover that his family was attacked and slaughtered by a demon. Tanjiro and his sister Nezuko were the sole survivors of the incident, with Nezuko being transformed into a demon, but still surprisingly showing signs of human emotion and thought. After an encounter with Giyū Tomioka, a demon slayer, Tanjiro is recruited by him and sent to be taught by Sakonji Urokodaki, a retired Demon Slayer, to become a demon slayer, and begins his quest to help his sister turn into human again and avenge the death of his family. For more information, please visit <a href="https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba" target="_blank">Wikipedia.org</a></p>
+                    </div>
+                </section>
+                <section id="character_container">
+                    <h2>Main Character</h2>
+                    <h3 id="character_name">Kamado Tanjiro and Kamado Nezuko</h3>
+                    <div id="character_img">
+                        <img id="tanjiro" class="img_style" src="images/characters/demons_slayer/img0.jpg" alt="Kamado Tanjiro and Nezuko">
+                        <div>    
+                            <button type="button" onclick="prev_image()">Prev</button>
+                            <button type="button" onclick="next_image()">Next</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div id="overview_container" class="fcontainer">
+                <p class="text_align_center"><b>Overview</b></p>
+                <div>
+                    <img id="overview_logo" src="images/logo/shrec_tab_logo.png" alt="Shrec Logo">
+                    <p id="overview_text">Shrec is a platform where I share my favorite Shonen anime series.</p>
+                </div>
+            </div>
+            <div id="sl_container" class="fcontainer">
+                <p class="text_align_center"><b>Social Links</b></p>
+                <div>
+                    <div id="sl_fb" class="sl_margin">
+                        <a href="https://facebook.com" target="_blank"><img class="sl_icon" src="images/icons/facebook_icon_512.png" alt="Facebook Icon"></a>
+                    </div>
+                    <div id="sl_instagram" class="sl_margin">
+                        <a href="https://instagram.com" target="_blank"><img class="sl_icon" src="images/icons/instagram_icon_512.png" alt="Instagram Icon"></a>
+                    </div>
+                    <div id="sl_twitter" class="sl_margin">
+                        <a href="https://twitter.com" target="_blank"><img class="sl_icon" src="images/icons/twitter_icon_512.png" alt="Twitter Icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="explore_container" class="fcontainer">
+                <p class="text_align_center"><b>Explore</b></p>
+                <nav id="explore_nav">
+                    <ul class="nav_style">
+                        <li><a href="#recommendations_container">Browse</a></li>
+                        <li><a href="#overview_container">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <script src="js/main_script.js"></script>
+        <script src="js/recommendations.js"></script>
+    </body>
+</html>

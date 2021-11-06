@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Shonen Anime Recommendation | Shrec</title>
+        <link rel="icon" href="images/logo/shrec_tab_logo.png">
+        <link rel="stylesheet" href="css/main_style.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+        <header>
+            <div id="top_logo_container">
+                <img id="top_logo" src="images/logo/SHREC.png" alt="Shrec Logo">
+            </div>
+            <nav id="top_nav_container">  
+                <div id="burger" onclick="open_vertical_nav()">
+                    <span id="open_bread1" class="bread"></span>
+                    <span id="open_bread2" class="bread"></span>
+                    <span id="open_bread3" class="bread"></span>
+                </div>
+                <div id="mobile_nav_container">
+                    <div id="mobile_close_nav" onclick="close_vertical_nav()">
+                        <span id="close_bread1" class="close_bread"></span>
+                        <span id="close_bread2" class="close_bread"></span>
+                    </div>
+                    <ul id="mobile_nav">
+                        <li class="active"><a class="active_link" href="index.html">Home</a></li>
+                        <li class="inactive"><a href="#recommendations_container">Browse</a></li>
+                        <li class="inactive"><a href="#overview_container">About</a></li>
+                    </ul>
+                </div>
+                <div id="desktop_nav_container">    
+                    <ul id="desktop_nav">
+                        <li><a class="active_link" href="index.html">Home</a></li>
+                        <li><a class="desktop_inactive" href="#recommendations_container">Browse</a></li>
+                        <li><a class="desktop_inactive" href="#overview_container">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section id="hero_container" >
+            <h1>Shonen Anime Recommendations</h1>
+            <div id="hero">
+                <div id="browse_container">
+                    <a id="browse_link" href="#recommendations_container">
+                        <img id="browse_icon" src="images/icons/down_arrow.png" alt="Browse Icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter_container">
+            <h2>Want to join our newsletter?</h2>
+            <form id="email_container">
+                <input type="email" id="email" name="email" placeholder="youremail@example.com">
+                <input type="button" id="email_submit" value="Join" onclick="newsletter_response()">
+            </form>
+        </section>
+        <main id="recommendations_container" class="ffamily">
+            <h2>Recommendations</h2>
+            <div id="col1">
+                <section id="one_piece">
+                    <h3>One Piece</h3>
+                    <div>
+                        <img id="image0" class="rec_img" src="images/recommendations/one_piece.jpg" alt="One Piece Anime" onmouseover="opaque()">
+                        <a href="one_piece.html" target="_blank">Visit</a>
+                    </div>
+                </section>
+                <section id="demon_slayer">
+                    <h3>Demon Slayer</h3>
+                    <div>
+                        <img id="image1" class="rec_img" src="images/recommendations/demon_slayer.png" alt="Demon Slayer Anime">
+                        <a href="demon_slayer.html" target="_blank">Visit</a>
+                    </div>
+                </section>
+            </div>
+            <div id="col2">
+                <section id="hero_academia">
+                    <h3>My Hero Academia</h3>
+                    <div>
+                        <img id="image2" class="rec_img" src="images/recommendations/hero_academia.png" alt="My Hero Academia Anime">
+                        <a href="hero_academia.html" target="_blank">Visit</a>
+                    </div>
+                </section>
+                <section id="naruto">
+                    <h3>Naruto</h3>
+                    <div>
+                        <img id="image3" class="rec_img" src="images/recommendations/naruto.png" alt="Naruto Anime">
+                        <a href="naruto.html" target="_blank">Visit</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div id="overview_container" class="fcontainer">
+                <p class="text_align_center"><b>Overview</b></p>
+                <div>
+                    <img id="overview_logo" src="images/logo/shrec_tab_logo.png" alt="Shrec Logo">
+                    <p id="overview_text">Shrec is a platform where I share my favorite Shonen anime series.</p>
+                </div>
+            </div>
+            <div id="sl_container" class="fcontainer">
+                <p class="text_align_center"><b>Social Links</b></p>
+                <div>
+                    <div id="sl_fb" class="sl_margin">
+                        <a href="https://facebook.com" target="_blank"><img class="sl_icon" src="images/icons/facebook_icon_512.png" alt="Facebook Icon"></a>
+                    </div>
+                    <div id="sl_instagram" class="sl_margin">
+                        <a href="https://instagram.com" target="_blank"><img class="sl_icon" src="images/icons/instagram_icon_512.png" alt="Instagram Icon"></a>
+                    </div>
+                    <div id="sl_twitter" class="sl_margin">
+                        <a href="https://twitter.com" target="_blank"><img class="sl_icon" src="images/icons/twitter_icon_512.png" alt="Twitter Icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="explore_container" class="fcontainer">
+                <p class="text_align_center"><b>Explore</b></p>
+                <nav id="explore_nav">
+                    <ul class="nav_style">
+                        <li><a href="#recommendations_container">Browse</a></li>
+                        <li><a href="#overview_container">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <script src="js/main_script.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
